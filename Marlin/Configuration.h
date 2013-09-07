@@ -49,6 +49,7 @@
 // 70 = Megatronics
 // 701= Megatronics v2.0
 // 702= Minitronics v1.0
+// 72 = NEW LEAPFROG CREATR BOARD
 // 90 = Alpha OMCA board
 // 91 = Final OMCA board
 // 301 = Rambo
@@ -370,12 +371,12 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {67.1, 67.1, 3200/5, 55.8}  // default steps per unit for Ultimaker
-#define DEFAULT_MAX_FEEDRATE          {280, 280, 26, 300}    // (mm/sec)
-#define DEFAULT_MAX_ACCELERATION      {1500, 1500, 100, 5000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {67.1, 67.1, 3200/5, 49}  // default steps per unit for Ultimaker
+#define DEFAULT_MAX_FEEDRATE          {200, 200, 25, 200}    // (mm/sec)
+#define DEFAULT_MAX_ACCELERATION      {1500, 1500, 100, 10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for skeinforge 40+, for older versions raise them a lot.
 
-#define DEFAULT_ACCELERATION          1800    // X, Y, Z and E max acceleration in mm/s^2 for printing moves
-#define DEFAULT_RETRACT_ACCELERATION  1800   // X, Y, Z and E max acceleration in mm/s^2 for retracts
+#define DEFAULT_ACCELERATION          3000    // X, Y, Z and E max acceleration in mm/s^2 for printing moves
+#define DEFAULT_RETRACT_ACCELERATION  3000   // X, Y, Z and E max acceleration in mm/s^2 for retracts
 
 // Offset of the extruders (uncomment if using more than one and relying on firmware to position when changing).
 // The offset has to be X=0, Y=0 for the extruder 0 hotend (default extruder).
@@ -392,6 +393,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 
 
 #define DELAY_WRITE_MICROSECONDS 2            // It adds a delay so the pulse signal is long enough for the stepper driver. Comment the line if not needed a delay to have a longer signal to the stepper driver
+
 //===========================================================================
 //=============================Additional Features===========================
 //===========================================================================
