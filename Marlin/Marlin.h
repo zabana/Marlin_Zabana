@@ -192,9 +192,12 @@ extern int extrudemultiply; // Sets extrude multiply factor (in percent)
 extern float current_position[NUM_AXIS] ;
 extern float add_homeing[3];
 <<<<<<< HEAD
+<<<<<<< HEAD
 #ifdef DELTA
 extern float endstop_adj[3];
 #endif 
+=======
+>>>>>>> de85001b343709938b10205cf32ab5368f769f6d
 =======
 >>>>>>> de85001b343709938b10205cf32ab5368f769f6d
 extern float min_pos[3];
