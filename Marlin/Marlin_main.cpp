@@ -1249,9 +1249,9 @@ void process_commands()
         }
       #if defined(TEMP_0_PIN) && TEMP_0_PIN > -1
         SERIAL_PROTOCOLPGM("ok T:");                                                //First extruder temp is shown
-        SERIAL_PROTOCOL_F(degHotend(tmp_extruder),1);
+        SERIAL_PROTOCOL_F(degHotend(0),1);
         SERIAL_PROTOCOLPGM(" /");
-        SERIAL_PROTOCOL_F(degTargetHotend(tmp_extruder),1);
+        SERIAL_PROTOCOL_F(degTargetHotend(0),1);
         
         for (int8_t cur_extruder = 1; cur_extruder < EXTRUDERS; ++cur_extruder) {   //If more extruders are defined their temp is shown as well
           SERIAL_PROTOCOLPGM(" T");
